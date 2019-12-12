@@ -2,12 +2,13 @@ require 'pry'
 
 def prime?(integer)
   my_range = (2..integer - 1).to_a 
-  if integer == 2 || integer == 3 || integer < 0 
+  if integer == 2 || integer == 3
     return true
-    
+  elsif integer < 0 
+    false
   end
   my_range.any? { |divider|
-    if integer % divider == 0 
+    if integer % divider == 0  
       return false
     end
     # if integer % divider != 0 && integer > 2 
