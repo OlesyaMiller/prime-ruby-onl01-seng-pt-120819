@@ -3,7 +3,7 @@ require 'pry'
 def prime?(integer)
   my_range = (2..integer - 1).to_a 
   if integer == 2 
-    true
+    return true
   end
   my_range.any? { |divider|
     if integer % divider == 0 
