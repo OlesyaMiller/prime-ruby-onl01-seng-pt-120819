@@ -7,9 +7,9 @@ def prime?(integer)
   # return true if integer == 1 || integer == 2 
 
   my_range.any? { |divider|
-    #if integer % divider == 0 
+    if integer % divider == 0 
       return false
-    #end
+    end
     # if integer % divider != 0 && integer > 2 
     #   return true 
     # end 
